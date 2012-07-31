@@ -1,5 +1,6 @@
 == Welcome to Rails
 
+
 Rails is a web-application framework that includes everything needed to create
 database-backed web applications according to the Model-View-Control pattern.
 
@@ -42,6 +43,7 @@ the following resources handy:
 
 * The Getting Started Guide: http://guides.rubyonrails.org/getting_started.html
 * Ruby on Rails Tutorial Book: http://www.railstutorial.org/
+* Tutorial for this project http://ruby.railstutorial.org
 
 
 == Debugging Rails
@@ -259,3 +261,24 @@ vendor
   External libraries that the application depends on. Also includes the plugins
   subdirectory. If the app has frozen rails, those gems also go here, under
   vendor/rails/. This directory is in the load path.
+
+
+Installation of PostgreSQL for Ubuntu 12.x
+  
+  https://help.ubuntu.com/12.04/serverguide/postgresql.html
+
+  sudo apt-get install postgresql-9.1
+  sudo apt-get install libpq-dev
+  
+  gem install postgres
+
+  Change the password in Ubuntu - Postgres
+  sudo su postgres -c passwd
+
+  psql -d postgres -U postgres
+
+  create database sample_test with encoding 'UTF-8';
+
+
+
+
