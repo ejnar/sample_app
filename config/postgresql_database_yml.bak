@@ -1,0 +1,33 @@
+# Postgresql version 9.x
+#   gem install postgres
+#
+#   Ensure the Postgresql gem is defined in your Gemfile
+#   gem 'pg'
+
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: sample_development
+  pool: 5
+  username: postgres
+  password: postgres
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: sample_test
+  pool: 5
+  username: postgres
+  password: postgres
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: sample_production
+  pool: 5
+  username: postgres
+  password: postgres

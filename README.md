@@ -281,4 +281,27 @@ Installation of PostgreSQL for Ubuntu 12.x
 
 
 
+##########################
+#   Command to remeber   # 
+#------------------------#
+
+Build project and install all gem:
+build install
+
+Start web server: 
+rails s
+
+Build db:
+rake db:migrate
+
+Add test:
+rails generate integration_test static_pages
+
+Run test:
+bundle exec rspec spec/requests/static_pages_spec.rb
+Run all tests:
+bundle exec rspec spec
+Create test db:
+bundle exec rake db:test:prepare
+
 
