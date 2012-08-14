@@ -291,8 +291,6 @@ build install
 Start web server: 
 rails s
 
-Build db:
-rake db:migrate
 
 Add test:
 rails generate integration_test static_pages
@@ -301,6 +299,14 @@ Run test:
 bundle exec rspec spec/requests/static_pages_spec.rb
 Run all tests:
 bundle exec rspec spec
+
+
+Database
+
+Build db:
+rake db:migrate
+Reset db:
+bundle exec rake db:reset
 Create test db:
 bundle exec rake db:test:prepare
 
